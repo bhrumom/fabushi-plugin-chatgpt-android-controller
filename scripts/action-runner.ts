@@ -23,7 +23,7 @@ type Inbox = {
 };
 
 const inboxPath = resolve(process.env.CHATGPT_ANDROID_ACTIONS_INBOX
-  || '.agents/plugins/plugins/chatgpt-auto-confirm/tasks/actions-inbox.json');
+  || 'tasks/actions-inbox.json');
 const tracePath = process.env.CHATGPT_ANDROID_RUNNER_TRACE || '';
 const durationSeconds = Math.min(20_400, Math.max(60, Number(
   process.env.CHATGPT_ANDROID_RUNNER_SECONDS || 18_600,
