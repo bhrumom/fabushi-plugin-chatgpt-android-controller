@@ -1,0 +1,15 @@
+{
+  "name": "@mahayana/chatgpt-android-controller",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types --import ./runtime/safety-patches.ts server/index.ts",
+    "setup:appium": "node scripts/setup-appium.mjs",
+    "check:runner": "node --check scripts/bootstrap-apk-login.mjs && node --check scripts/verify-apk-session.mjs && node --experimental-strip-types --check scripts/apk-smoke.ts && node --experimental-strip-types --check scripts/action-runner.ts",
+    "test": "node --experimental-strip-types --import ./runtime/safety-patches.ts --test test/*.test.ts && npm run check:runner"
+  },
+  "engines": {
+    "node": ">=22.6"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ChatGPT Android 自动化",
+  "version": "0.1.0",
+  "description": "通过 ADB 与 Android UI Automator 控制安卓端 ChatGPT，提供自动确认、消息、任务队列和多设备账号槽位。",
+  "permissions": [
+    "mcp.call",
+    "storage.local"
+  ]
+}

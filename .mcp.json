@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "chatgpt-android-controller-local": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "--experimental-strip-types",
+        "--import",
+        "./runtime/safety-patches.ts",
+        "server/index.ts"
+      ],
+      "cwd": "."
+    }
+  }
+}

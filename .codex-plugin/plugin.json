@@ -1,0 +1,36 @@
+{
+  "name": "chatgpt-android-controller",
+  "version": "0.1.0",
+  "description": "在 GitHub Actions 或桌面运行时中通过 ADB 与 Appium UiAutomator2 操控 ChatGPT Android APK，复用加密 AVD 登录态并持续执行可恢复任务队列",
+  "author": {
+    "name": "Fabushi"
+  },
+  "homepage": "https://fabushi.ombhrum.com/miniapps/chatgpt-android-controller",
+  "license": "Proprietary",
+  "keywords": [
+    "chatgpt",
+    "android",
+    "apk",
+    "appium",
+    "uiautomator2",
+    "github-actions"
+  ],
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "ChatGPT Android 自动化",
+    "shortDescription": "持续操控 Android ChatGPT APK，自动确认、发消息并运行可恢复任务队列",
+    "longDescription": "通过 ADB 与 Appium UiAutomator2 操作真实 Android ChatGPT APK。GitHub-hosted Actions 可恢复经 AES 加密的完整 AVD 登录状态，验证 APK 内真实 Chat composer 后执行消息、授权确认和持久化任务队列，并在单轮结束时重新加密 checkpoint 后接力到下一轮 Runner。",
+    "developerName": "Fabushi",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://fabushi.ombhrum.com/",
+    "defaultPrompt": [
+      "检查 Android ChatGPT APK 登录和自动化状态",
+      "启动 ChatGPT Android 授权卡自动确认",
+      "创建并运行一个可恢复的 Android ChatGPT 任务队列"
+    ]
+  }
+}

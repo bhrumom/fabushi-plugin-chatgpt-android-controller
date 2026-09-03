@@ -1,0 +1,16 @@
+# Plugin-local generated state and build artifacts
+.mahayana-state/
+.mahayana-distribution/
+.wrangler/
+node_modules/
+target/
+dist/
+build/
+out/
+*.log
+*.tmp
+*.temp
+.env
+.env.*
+!.env.example
+.DS_Store

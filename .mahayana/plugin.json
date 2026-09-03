@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "supportedPlatforms": ["cli", "desktop"],
+  "miniapp": {
+    "entry": "./index.html",
+    "bridgeVersion": "1.0",
+    "permissions": [
+      "mcp.call",
+      "storage.local"
+    ]
+  },
+  "commands": [
+    { "name": "start", "tool": "start" },
+    { "name": "stop", "tool": "stop" },
+    { "name": "status", "tool": "status" },
+    { "name": "scan", "tool": "scan_once" },
+    { "name": "audit", "tool": "audit_log" },
+    { "name": "diagnose", "tool": "diagnose" },
+    { "name": "send", "tool": "send_and_watch" },
+    { "name": "add-connector", "tool": "add_connector" },
+    { "name": "reply", "tool": "get_reply" },
+    { "name": "chat-status", "tool": "chat_status" },
+    { "name": "queue-enqueue", "tool": "enqueue_tasks" },
+    { "name": "queue-start", "tool": "start_queue" },
+    { "name": "queue-status", "tool": "queue_status" },
+    { "name": "queue-wait-review", "tool": "wait_for_review" },
+    { "name": "queue-review", "tool": "review_task" },
+    { "name": "queue-pause", "tool": "pause_queue" },
+    { "name": "queue-resume", "tool": "resume_queue" },
+    { "name": "queue-retry", "tool": "retry_task" },
+    { "name": "queue-cancel", "tool": "cancel_task" },
+    { "name": "queue-watchdog", "tool": "watchdog" }
+  ],
+  "gates": []
+}

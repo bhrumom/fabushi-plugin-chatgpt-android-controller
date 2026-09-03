@@ -1,0 +1,8 @@
+{
+  "provider": "github",
+  "repository": "bhrumom/fabushi-plugin-chatgpt-android-controller",
+  "repositoryId": 1355541223,
+  "defaultBranch": "main",
+  "license": "Proprietary",
+  "subdirectory": "."
+}
